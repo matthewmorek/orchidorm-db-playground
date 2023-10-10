@@ -6,17 +6,17 @@
     "db": "node -r ts-node/register src/db/dbScript.ts"
   },
   "dependencies": {
-    "orchid-orm": "^1.17.18",
+    "orchid-orm": "^1.17.27",
     "pg": "^8.11.3",
-    "pqb": "^0.18.18"
+    "pqb": "^0.18.27"
   },
   "devDependencies": {
-    "@types/node": "^20.6.3",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
     "dotenv": "^16.3.1",
     "eslint": "8.50.0",
     "eslint-config-prettier": "^9.0.0",
-    "rake-db": "^2.10.52",
+    "rake-db": "^2.10.61",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
