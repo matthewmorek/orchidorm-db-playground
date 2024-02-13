@@ -6,9 +6,7 @@
     "db": "node -r ts-node/register src/db/dbScript.ts"
   },
   "dependencies": {
-    "orchid-orm": "^1.17.27",
-    "pg": "^8.11.3",
-    "pqb": "^0.18.27"
+    "orchid-orm": "^1.19.0"
   },
   "devDependencies": {
     "@types/node": "^20.8.4",
