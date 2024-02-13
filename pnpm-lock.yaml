@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   orchid-orm:
-    specifier: ^1.19.0
-    version: 1.19.0(typescript@5.2.2)
+    specifier: ^1.20.0
+    version: 1.20.0(typescript@5.2.2)
 
 devDependencies:
   '@types/node':
@@ -864,18 +864,18 @@ packages:
     resolution: {integrity: sha512-Nxj6at64ISpaJCMfzD2fJGJ9+cw1FiTIM/BbXc2rrotYaeDclWDrMcdzFPS8awTzpXwBr6TYj3T7zXwoIUFaiw==}
     dev: true
 
-  /orchid-core@0.10.17:
-    resolution: {integrity: sha512-+2OYlX9OTKevYN900YiPXWeOneo0Z+E0W8AS4A2cwe7wqSeYXJcgt+y3BGgWou1d3OJcC0tglQabwx0fuY3SMg==}
+  /orchid-core@0.11.0:
+    resolution: {integrity: sha512-miD/HgJyxe+Wnv/3Eq5XScZcW+JKKhB8gj6O1PC4NvLM4hcWRm+mQuv0KifavkjnYsm3mdod3XBqXy2FLDqsNw==}
     dev: false
 
-  /orchid-orm@1.19.0(typescript@5.2.2):
-    resolution: {integrity: sha512-NddKH6eoM9GndH0IHIjDOVTncn3mcHQKFTnyXcFm4R8OMP/h+HgDDucXde7h35HHvClDc0goVuJSD/13Y11M1A==}
+  /orchid-orm@1.20.0(typescript@5.2.2):
+    resolution: {integrity: sha512-kvXIAJNll2GeC8OdjxRHXloqlK2T2TSXU8Ldu193H5YIdY15uxgi4a2X4d/QTFFLekRo746Rw9Mzq8I3fUMhlg==}
     peerDependencies:
       typescript: '*'
     dependencies:
       inflection: 3.0.0
-      orchid-core: 0.10.17
-      pqb: 0.21.0
+      orchid-core: 0.11.0
+      pqb: 0.22.0
       prompts: 2.4.2
       typescript: 5.2.2
     transitivePeerDependencies:
@@ -1052,11 +1052,11 @@ packages:
       - pg-native
     dev: true
 
-  /pqb@0.21.0:
-    resolution: {integrity: sha512-dd/QMdY/diVnbtFvS0eP9PNHb3Sk8DnOMKL23oDshjahobexgWUDeUVBu4DBsJC4dDGsOQ6WAEvQiEA/qvuGJw==}
+  /pqb@0.22.0:
+    resolution: {integrity: sha512-1B6zgLkwAQE2imoOqdK75GVkgRMEwZkLichRWbXXoINBDrI9Xvq7g1F0zUUrRssJOiwmssMWYtSEB8CQY94QBQ==}
     dependencies:
       '@types/pg': 8.10.3
-      orchid-core: 0.10.17
+      orchid-core: 0.11.0
       pg: 8.11.3
     transitivePeerDependencies:
       - pg-native
