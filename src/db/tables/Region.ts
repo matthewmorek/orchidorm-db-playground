@@ -1,23 +1,16 @@
+import { Selectable } from "orchid-orm";
 import { BaseTable } from "./BaseTable";
-import { LocationTable } from "./Location";
+
+export type Region = Selectable<RegionTable>;
 
 export class RegionTable extends BaseTable {
   readonly table = "region";
   columns = this.setColumns((t) => ({
-    id: t
-      .uuid()
-      .primaryKey()
-      .default(t.sql`uuid_generate_v4()`),
+    id: t.uuid().primaryKey(),
     name: t.varchar().unique(),
     title: t.varchar(),
     description: t.varchar().nullable(),
+    createdAt: t.timestamp().default(t.sql`now()`),
+    updatedAt: t.timestamp().nullable(),
   }));
-
-  relations = {
-    locations: this.hasMany(() => LocationTable, {
-      required: false,
-      columns: ["id"],
-      references: ["regionId"],
-    }),
-  };
 }
